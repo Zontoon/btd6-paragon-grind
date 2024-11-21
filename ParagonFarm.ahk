@@ -44,15 +44,15 @@ paragonSelect := IniRead("config.ini", "settings", "paragonSelect")
             PlaceTower(590,627,"f",4,2,0,false,0,0)
             ClickF(2435,1352)
             ClickF(2435,1352)
-            ClickF(1000,1154)
-            loop 110 {
-                Click
-                Click
+            ClickF(72,37)
+            loop 100 {
+                Click 2
                 Sleep 3000
             }
             ClickF(1283,1211)
-            ClickF(956,1140)
-            Sleep(1000)
+            Sleep 500
+            ClickF(954,1126)
+            Sleep 5000
         }
     }
     else If(paragonSelect == "wizard") {
